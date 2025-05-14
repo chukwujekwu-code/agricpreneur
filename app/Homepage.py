@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 
 # Loading model and dataset
-model = joblib.load("credit_model.pkl")
-df = pd.read_csv("credit_score_dataset.csv")
+model = joblib.load("app/credit_model.pkl")
+df = pd.read_csv("app/credit_score_dataset.csv")
 df['statename'] = df['statename'].str.lower()
 
 # State encoding mapping
